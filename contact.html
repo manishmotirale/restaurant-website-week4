@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img
+              src="images/logo.png"
+              alt="Bella Vista Restaurant Logo"
+              width="150"
+              height="60"
+            />
+          </a>
+
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            <li>
+              <a href="#reservation" class="btn btn-primary">Book Table</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section
+        class="page-hero"
+        style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;images/hero-bg.jpg&quot;);
+        "
+      >
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you</p>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Visit Us</h3>
+              <address>
+                <p>123 Restaurant Street</p>
+                <p>Food District, City 10001</p>
+              </address>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h3>Call Us</h3>
+              <p>Reservations: (123) 456-7890</p>
+              <p>General: (123) 456-7891</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email Us</h3>
+              <p>Reservations: reservations@bellavista.com</p>
+              <p>General: info@bellavista.com</p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Opening Hours</h3>
+              <p>Mon-Thu: 11AM - 10PM</p>
+              <p>Fri-Sat: 11AM - 11PM</p>
+              <p>Sunday: 12PM - 9PM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form & Map -->
+      <section class="contact-form-map">
+        <div class="container">
+          <div class="form-map-grid">
+            <!-- Contact Form -->
+            <div class="form-section">
+              <h2>Send us a Message</h2>
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    aria-required="true"
+                  />
+                  <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    aria-required="true"
+                  />
+                  <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="">Select a subject</option>
+                    <option value="reservation">Reservation Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="catering">Catering Services</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    aria-required="true"
+                  ></textarea>
+                  <div class="error-message" id="messageError"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Map -->
+            <div class="map-section">
+              <h2>Find Us</h2>
+              <div
+                class="map-placeholder"
+                role="img"
+                aria-label="Map showing restaurant location"
+              >
+                <div class="map-content">
+                  <i class="fas fa-map-marker-alt map-icon"></i>
+                  <p>123 Restaurant Street, City</p>
+                  <p class="map-instructions">Click for directions</p>
+                </div>
+              </div>
+
+              <!-- Reservation Section -->
+              <div class="reservation-section" id="reservation">
+                <h3>Make a Reservation</h3>
+                <form id="reservationForm">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="res-date">Date *</label>
+                      <input type="date" id="res-date" name="date" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="res-time">Time *</label>
+                      <select id="res-time" name="time" required>
+                        <option value="">Select time</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="guests">Number of Guests *</label>
+                      <select id="guests" name="guests" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7+ People</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-secondary">
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+  </body>
+</html>

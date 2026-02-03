@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bella Vista Restaurant - Authentic Italian cuisine"
+    />
+    <title>Bella Vista | Italian Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header & Navigation -->
+    <header class="header" role="banner">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+          <a href="index.html" class="logo">
+            <img
+              src="images/logo.png"
+              alt="Bella Vista Restaurant Logo"
+              width="150"
+              height="60"
+            />
+          </a>
+
+          <button
+            class="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <ul class="nav-menu" role="menubar">
+            <li role="none">
+              <a
+                href="index.html"
+                class="nav-link active"
+                role="menuitem"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li role="none">
+              <a href="about.html" class="nav-link" role="menuitem">About</a>
+            </li>
+            <li role="none">
+              <a href="menu.html" class="nav-link" role="menuitem">Menu</a>
+            </li>
+            <li role="none">
+              <a href="contact.html" class="nav-link" role="menuitem"
+                >Contact</a
+              >
+            </li>
+            <li role="none">
+              <a
+                href="contact.html#reservation"
+                class="btn btn-primary"
+                role="button"
+              >
+                <i class="fas fa-calendar-alt"></i> Book Table
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      id="main-content"
+      role="region"
+      aria-labelledby="hero-heading"
+    >
+      <div class="container">
+        <div class="hero-content">
+          <h1 id="hero-heading">
+            Authentic Italian Cuisine
+            <span class="highlight">in the Heart of the City</span>
+          </h1>
+          <p class="hero-subtitle">
+            Experience traditional recipes passed down through generations, made
+            with love and the finest ingredients.
+          </p>
+          <div class="hero-buttons">
+            <a href="menu.html" class="btn btn-secondary">View Menu</a>
+            <a href="contact.html#reservation" class="btn btn-primary">
+              <i class="fas fa-phone-alt"></i> Reserve Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" role="region" aria-labelledby="features-heading">
+      <div class="container">
+        <h2 id="features-heading" class="section-title">
+          Why Choose Bella Vista
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card" role="article">
+            <div class="feature-icon">
+              <i class="fas fa-utensils" aria-hidden="true"></i>
+            </div>
+            <h3>Authentic Recipes</h3>
+            <p>
+              Traditional Italian recipes passed down for generations, prepared
+              by our master chefs.
+            </p>
+          </div>
+
+          <div class="feature-card" role="article">
+            <div class="feature-icon">
+              <i class="fas fa-leaf" aria-hidden="true"></i>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>
+              Daily sourced organic vegetables and premium ingredients for the
+              best flavor.
+            </p>
+          </div>
+
+          <div class="feature-card" role="article">
+            <div class="feature-icon">
+              <i class="fas fa-wine-glass-alt" aria-hidden="true"></i>
+            </div>
+            <h3>Fine Wines</h3>
+            <p>
+              Curated selection of Italian wines to perfectly complement your
+              meal.
+            </p>
+          </div>
+
+          <div class="feature-card" role="article">
+            <div class="feature-icon">
+              <i class="fas fa-truck" aria-hidden="true"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Enjoy our delicious food at home with our quick and reliable
+              delivery service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Dishes -->
+    <section
+      class="special-dishes"
+      role="region"
+      aria-labelledby="dishes-heading"
+    >
+      <div class="container">
+        <h2 id="dishes-heading" class="section-title">Chef's Specials</h2>
+        <div class="dishes-grid">
+          <article class="dish-card">
+            <img
+              src="images/dish1.png"
+              alt="Truffle Pasta with mushroom sauce"
+              loading="lazy"
+            />
+            <div class="dish-info">
+              <h3>Truffle Pasta</h3>
+              <p>Handmade pasta with black truffle and wild mushrooms</p>
+              <span class="price">$24.99</span>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img
+              src="images/dish2.png"
+              alt="Grilled Salmon with vegetables"
+              loading="lazy"
+            />
+            <div class="dish-info">
+              <h3>Grilled Salmon</h3>
+              <p>
+                Atlantic salmon with lemon butter sauce and seasonal vegetables
+              </p>
+              <span class="price">$28.99</span>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="images/dish3.png" alt="Tiramisu dessert" loading="lazy" />
+            <div class="dish-info">
+              <h3>Classic Tiramisu</h3>
+              <p>Traditional Italian dessert with mascarpone and espresso</p>
+              <span class="price">$12.99</span>
+            </div>
+          </article>
+        </div>
+        <div class="text-center">
+          <a href="menu.html" class="btn btn-secondary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Bella Vista</h3>
+            <p>Bringing authentic Italian flavors to your table since 1995.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="TripAdvisor"
+                ><i class="fab fa-tripadvisor"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <address>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Restaurant Street,
+                City
+              </p>
+              <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+              <p><i class="fas fa-envelope"></i> info@bellavista.com</p>
+            </address>
+          </div>
+
+          <div class="footer-col">
+            <h4>Opening Hours</h4>
+            <p>Monday - Thursday: 11AM - 10PM</p>
+            <p>Friday - Saturday: 11AM - 11PM</p>
+            <p>Sunday: 12PM - 9PM</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html#reservation">Reservations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Bella Vista Restaurant. All rights reserved.</p>
+          <p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

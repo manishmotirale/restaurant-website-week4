@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img
+              src="images/logo.png"
+              alt="Bella Vista Restaurant Logo"
+              width="150"
+              height="60"
+            />
+          </a>
+
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="menu.html" class="nav-link">Menu</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a href="contact.html#reservation" class="btn btn-primary"
+                >Book Table</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section
+        class="page-hero"
+        style="
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(&quot;images/restaurant-interior.jpg&quot;);
+        "
+      >
+        <div class="container">
+          <h1>Our Story</h1>
+          <p>Three generations of passion for authentic Italian cuisine</p>
+        </div>
+      </section>
+
+      <!-- About Content -->
+      <section class="about-content">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <h2>Since 1995</h2>
+              <p>
+                Bella Vista was founded by Giovanni Rossi, who brought his
+                family recipes from Naples to create an authentic Italian dining
+                experience. What started as a small family restaurant has grown
+                into a beloved culinary destination, while maintaining our
+                commitment to tradition and quality.
+              </p>
+
+              <div class="mission-section">
+                <h3>Our Mission</h3>
+                <p>
+                  To bring the authentic taste of Italy to every table, using
+                  traditional recipes, the finest ingredients, and heartfelt
+                  hospitality that makes every guest feel like family.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-image">
+              <img
+                src="images/about-image.jpg"
+                alt="Chef preparing pasta in our kitchen"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Team Section -->
+          <div class="team-section">
+            <h2 class="section-title">Meet Our Chefs</h2>
+            <div class="team-grid">
+              <div class="team-card">
+                <div class="team-img"></div>
+                <h3>Marco Rossi</h3>
+                <p class="team-role">Head Chef</p>
+                <p>
+                  Third generation chef specializing in traditional Neapolitan
+                  cuisine.
+                </p>
+              </div>
+
+              <div class="team-card">
+                <div class="team-img"></div>
+                <h3>Sophia Conti</h3>
+                <p class="team-role">Pastry Chef</p>
+                <p>Creator of our award-winning desserts and fresh pastas.</p>
+              </div>
+
+              <div class="team-card">
+                <div class="team-img"></div>
+                <h3>Luigi Moretti</h3>
+                <p class="team-role">Sous Chef</p>
+                <p>Expert in seafood and modern Italian fusion dishes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
